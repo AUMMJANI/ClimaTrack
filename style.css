@@ -77,3 +77,64 @@ body {
         transform: translateY(0);
     }
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    transition: background 0.8s ease;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-container {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    color: inherit;
+    max-width: 500px;
+    
+}
+
+/* Weather-based background gradients */
+body.clear {
+    background: linear-gradient(to top, #ffe259, #ffa751);
+    color: #000;
+}
+
+body.clouds {
+    background: linear-gradient(to top, #d7d2cc, #304352);
+    color: #fff;
+}
+
+body.rain {
+    background: linear-gradient(to top, #000046, #1cb5e0);
+    color: #fff;
+}
+
+body.snow {
+    background: linear-gradient(to top, #e0eafc, #cfdef3);
+    color: #000;
+}
+
+body.drizzle {
+    background: linear-gradient(to top, #89f7fe, #66a6ff);
+    color: #000;
+}
+
+body.thunderstorm {
+    background: linear-gradient(to top, #141e30, #243b55);
+    color: #fff;
+}
+
+body.mist,
+body.haze,
+body.fog {
+    background: linear-gradient(to top, #636363, #a2ab58);
+    color: #000;
+}

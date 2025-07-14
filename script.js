@@ -28,6 +28,26 @@ $(document).ready(function () {
               <span>🌬 Wind: ${data.wind.speed} m/s</span>
             `;
                         $('#weatherResult').html(html);
+                        // 🌈 Set full-page weather background
+                        const weatherMain = data.weather[0].main.toLowerCase();
+                        const weatherClass = {
+                            'clear': 'clear',
+                            'clouds': 'clouds',
+                            'rain': 'rain',
+                            'drizzle': 'drizzle',
+                            'snow': 'snow',
+                            'thunderstorm': 'thunderstorm',
+                            'mist': 'mist',
+                            'fog': 'fog',
+                            'haze': 'haze'
+                        }[weatherMain] || 'clear';
+
+                        // Remove any existing weather class from <body>
+                        $('body')
+                            .removeClass('clear clouds rain drizzle snow thunderstorm mist fog haze')
+                            .addClass(weatherClass);
+
+
                     } else {
                         $('#weatherResult').html(`<span>${data.message}</span>`);
                     }

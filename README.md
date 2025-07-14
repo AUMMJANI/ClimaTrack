@@ -7,11 +7,13 @@ ClimaTrack is a clean, responsive weather web app built using HTML, CSS, JavaScr
 ## 🌟 Features
 
 - 🔍 Search weather by city name
-- 🌐 Live data using OpenWeatherMap API
+- 🌐 Live weather data using OpenWeatherMap API
 - 🌡 Displays temperature, humidity, wind speed, and weather condition
-- ⚡ Smooth, asynchronous data fetch using AJAX
-- 🎨 Glassmorphism UI design with responsive layout
-- ❌ Error handling for invalid cities and API failures
+- 🎨 Weather-based background effects (rain, clear, snow, clouds, etc.)
+- 🧊 Glassmorphism UI with modern CSS styling
+- ⚡ Smooth, asynchronous data fetch using AJAX (no page reload)
+- ❌ Handles errors like invalid city names or failed API calls
+
 
 ---
 
